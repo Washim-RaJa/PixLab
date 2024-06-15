@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our goal is top at the heart of creativity services industry as a digital creator. In has a after comment">
+    <meta name="keywords" content="Business, Sales, Start-up, Marketing">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>PixLab</title>
+</head>
+<body>
+    <header>
+        <!-- Desktop Nav -->
+        <nav id="nav-menu" class="fixed top-0 bg-white z-50 w-full h-[90px] flex items-center justify-between px-5 sm:px-10 lg:px-14 py-5 shadow-lg">
+            <img src="./assets/Logo.png" alt="brand-logo" class="w-40 sm:w-60">
+            <ul class="hidden lg:flex gap-10">
+                <li>
+                    <a href="./index.html" class="font-semibold text-lg" aria-label="homepage-link">Home</a>
+                </li>
+                <li>
+                    <a href="#testimonials" class="font-semibold text-lg" aria-label="about-page-link">About Us</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="font-semibold text-lg" aria-label="app-link">Our App</a>
+                </li>
+                <li>
+                    <a href="#subscribe" class="font-semibold text-lg" aria-label="contacts-link">Contacts</a>
+                </li>
+            </ul>
+            <div class="hidden lg:flex gap-2 items-center">
+                <button class="font-['montserrat'] py-2 px-5 rounded-lg font-semibold border-2 border-transparent hover:border-[#FF6600]">
+                    Log in
+                </button>
+                <button class="font-['montserrat'] text-white px-6 py-2 rounded-lg bg-[#FF6600] border-2 border-transparent hover:border-[#FF6600] hover:bg-transparent hover:text-black hover:font-semibold">
+                    Sign up
+                </button>
+            </div>
+            <button
+                id="slider-menu-btn"
+                class="lg:hidden text-4xl sm:text-5xl hover:text-[#FF6600]"
+                onclick="sliderMenu()"
+                aria-label = "hamburger-menu-btn"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Nav -->
+        <div id="slider-menu-container" class="fixed z-40 rounded-b-[50px] border-b-2 border-[#FF6600] lg:hidden w-full flex justify-center items-center bg-[rgba(0,0,0,0.7)] -translate-y-full transition-all duration-500">
+            <ul class="text-center gap-10 py-5">
+                <li class="w-52 py-3 border-2 border-transparent hover:border-[#FF6600] rounded-lg">
+                    <a href="./index.html" class="font-semibold text-white text-lg" aria-label="homepage-link">Home</a>
+                </li>
+                <li class="w-52 py-3 border-2 border-transparent hover:border-[#FF6600] rounded-lg">
+                    <a href="#testimonials" class="font-semibold text-white text-lg" aria-label="about-page-link">About Us</a>
+                </li>
+                <li class="w-52 py-3 border-2 border-transparent hover:border-[#FF6600] rounded-lg">
+                    <a href="./index.html" class="font-semibold text-white text-lg" aria-label="app-link">Our App</a>
+                </li>
+                <li class="w-52 py-3 border-2 border-transparent hover:border-[#FF6600] rounded-lg">
+                    <a href="#subscribe" class="font-semibold text-white text-lg" aria-label="contacts-link">Contacts</a>
+                </li>
+                <li class="py-4 flex gap-5">
+                    <button class="font-['montserrat'] text-white w-24 py-2 rounded-lg bg-[#FF6600] border-2 border-transparent hover:border-[#FF6600] hover:bg-transparent hover:font-semibold">
+                        Log in
+                    </button>
+                    <button class="font-['montserrat'] text-white w-24 py-2 rounded-lg bg-[#FF6600] border-2 border-transparent hover:border-[#FF6600] hover:bg-transparent hover:font-semibold">
+                        Sign up
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- <section class="w-full h-[1000px] mt-[90px] bg-red-700 text-center">top</section> -->
+        <!-- Intro Section -->
+        <section id="hero-section" class="w-full flex flex-col lg:flex-row px-5 sm:px-10 lg:px-14 mt-[90px]">
+            <!-- hero-section -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center py-6 lg:pr-10">
+                <h1 class="leading-tight text-6xl text-center lg:text-left text-[#0B1B35] font-extrabold font-['montserrat'] mt-10 lg:mt-0">
+                    We boost growth for your startup business
+                </h1>
+                <p class="text-xl text-center lg:text-left font-['montserrat'] font-semibold my-10">
+                    Our goal is top at the heart of creativity services industry as a digital creator. In has a after comment
+                </p>
+                <div class="w-full flex flex-wrap justify-center lg:justify-start items-center gap-4">
+                    <button class="bg-[#FF6600] px-6 sm:px-10 py-3 text-white font-['montserrat'] border-2 border-transparent hover:border-[#FF6600] hover:bg-transparent hover:text-black font-semibold rounded-lg">
+                        Get Started
+                    </button>
+                    <div class="flex items-center gap-3">
+                        <div class="w-14 h-14 border-r-white border-4 border-[#FF6600] flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-circle-play text-[#5F6064] text-4xl hover:text-[#FF6600]"></i>
+                        </div>
+                        <a 
+                            href="#" 
+                            class="font-bold font-['montserrat'] hover:text-[#FF6600]" aria-label="learn-more-link"
+                        >Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- aside image -->
+            <div class="w-full lg:w-1/2 flex items-center">
+                <img id="hero-image" data-aos="fade-up" src="./assets/hero-image.png" alt="hero-image" class="w-full">
+            </div>
+        </section>
+        <button
+            id="toggle-theme-btn"
+            class="fixed top-28 right-5 z-50 sm:right-10 lg:right-14 text-5xl"
+            aria-label = "toggle-theme-btn"
+        >
+            <i class="fa-solid fa-toggle-off "></i>
+        </button>
+    </header>
+    <main id="main-section" class="w-full px-5 sm:px-10 lg:px-14">
+        <!-- service section -->
+        <section class="w-full flex flex-wrap py-24">
+            <!-- heading-1 -->
+            <p class="w-full text-center text-sm tracking-[6px] font-semibold text-gray-400">SERVICE</p>
+            <!-- heading-2 -->
+            <h1 class="w-full text-center text-4xl font-['Product_Sans'] font-semibold my-3">
+                Our Vision & Our Goal
+            </h1>
+            <!-- Service Card Container -->
+            <div class="w-full flex flex-wrap items-center justify-around gap-9 pt-10">
+                <!-- Graphic Design Card -->
+                <div id="gd-card" data-aos="fade-up" class="w-[280px] rounded-3xl shadow-2xl px-5 py-7 text-center">
+                    <img class="w-[50px] mx-auto" src="assets/gd_icon.png" alt="graphic-design-icon">
+                    <h2 class="font-['product_sans'] font-semibold text-2xl mt-6">Graphic Design</h2>
+                    <p class="leading-5 text-justify text-black my-3">
+                        Lorem ipsum dolor sit amet amet consectetur adipisicing et elit elit. Laborum et esse veritatis it dolor dolor et dolor dolor consectetur consectetur et dolor consectetur consequatur et quisquam, eum fugit fugit amet tenetur tenetur minima minima fugit delenitiiste accusamus delenitiiste elit esse it!
+                    </p>
+                    <button class="bg-[#FF6600] px-4 py-2 mt-2 text-white font-['montserrat'] rounded-lg border border-[#FF6600] hover:bg-transparent hover:text-black">
+                        Learn More
+                    </button>
+                </div>
+                <!-- Video Editing Card -->
+                <div id="ve-card" data-aos="fade-up" data-aos-delay="300" class="w-[280px] rounded-3xl shadow-2xl px-5 py-7 text-center">
+                    <img class="w-[60px] mx-auto" src="assets/video_icon.png" alt="video-editing-icon">
+                    <h2 class="font-['product_sans'] font-semibold text-2xl mt-10">Video Editing</h2>
+                    <p class="leading-5 text-justify text-black my-4">
+                        Lorem ipsum dolor sit amet amet consectetur adipisicing et elit elit. Laborum et esse veritatis it dolor dolor et dolor dolor consectetur consectetur et dolor consectetur consequatur et quisquam, eum fugit fugit amet tenetur tenetur minima minima fugit delenitiiste accusamus delenitiiste elit esse it!
+                    </p>
+                    <button class="bg-[#FF6600] px-4 py-2 mt-2 text-white font-['montserrat'] rounded-lg border border-[#FF6600] hover:bg-transparent hover:text-black">
+                        Learn More
+                    </button>
+                </div>
+                <!-- Digital Marketing Card -->
+                <div id="dm-card" data-aos="fade-up" data-aos-delay="500" class="w-[280px] rounded-3xl shadow-2xl px-5 py-7 text-center">
+                    <img class="w-[50px] mx-auto" src="assets/dm_icon.png" alt="digital-marketing-icon">
+                    <h2 class="font-['product_sans'] font-semibold text-2xl mt-10">Digital Marketing</h2>
+                    <p class="leading-5 text-justify text-black my-4">
+                        Lorem ipsum dolor sit amet amet consectetur adipisicing et elit elit. Laborum et esse veritatis it dolor dolor et dolor dolor consectetur consectetur et dolor consectetur consequatur et quisquam, eum fugit fugit amet tenetur tenetur minima minima fugit delenitiiste accusamus delenitiiste elit esse it!
+                    </p>
+                    <button class="bg-[#FF6600] px-4 py-2 mt-2 text-white font-['montserrat'] rounded-lg border border-[#FF6600] hover:bg-transparent hover:text-black">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Video Section -->
+        <section class="w-full flex flex-col lg:flex-row py-24 gap-y-12 lg:gap-y-0">
+            <div class="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
+                <h3 class="text-2xl font-['product_sans'] text-center lg:text-left">Many Blocks and Components</h3>
+                <p class="text-gray-400 leading-7 mt-6 mb-4 pr-0 lg:pr-16 text-center lg:text-left">
+                    Startup Framework contains components and complex blocks which can easily be integrated into almost any design.
+                </p>
+                <button class="w-[130px] h-12 border-2 rounded-3xl font-semibold hover:border-[#FF6600]">Explore</button>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img
+                    id="video-player-image"
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-out"
+                    src="assets/Video Player.png"
+                    alt="video-player-image"
+                    class="mx-auto"
+                />
+            </div>
+        </section>
+        <!-- Testimonials section -->
+        <section id="testimonials" class="w-full flex flex-wrap py-10">
+            <!-- heading-1 -->
+            <p class="w-full text-center text-sm tracking-[6px] font-semibold text-gray-400">TESTIMONIALS</p>
+            <!-- heading-2 -->
+            <h2 class="w-full text-center text-4xl font-['Product_Sans'] font-semibold my-3">
+                What Clients say about us
+            </h2>
+            <!-- Testimonial Card Container-->
+            <div class="w-full py-20 flex flex-wrap items-center justify-center lg:justify-between gap-10">
+                <!-- Card-1 -->
+                <div data-aos="zoom-in-up" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Mask (2).png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            The most important part of the Startup Framework is the samples and plans.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest mt-5">GENE WHITFIELD</p>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Userpic.png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            I've built my website with Startup just in one day, and it was perfectly ready-to-go.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest mt-5">ALLAN KIM</p>
+                    </div>
+                </div>
+                <!-- Card-3 -->
+                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Mask (2).png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            The most important part of the Startup Framework is the samples and plans.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest mt-5">GENE WHITFIELD</p>
+                    </div>
+                </div>
+                <!-- Card-4 -->
+                <div data-aos="zoom-in-up" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Mask (1).png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website and webapp.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest mt-10">KAYLEY FRAME</p>
+                    </div>
+                </div>
+                <!-- Card-5 -->
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Mask.png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support and others.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest my-4">RAYHAN CURRAN</p>
+                    </div>
+                </div>
+                <!-- Card-6 -->
+                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-[300px] flex items-start gap-5">
+                    <img src="assets/Mask (1).png" alt="user-image">
+                    <div class="">
+                        <p class="font-semibold text-justify">
+                            As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website and webapp.
+                        </p>
+                        <p class="font-semibold text-gray-400 text-sm tracking-widest mt-10">KAYLEY FRAME</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section -->
+        <section class="w-full flex flex-wrap justify-center gap-10 py-10">
+            <!-- heading-1 -->
+            <p class="w-full text-center text-sm tracking-[6px] font-semibold text-gray-400">OUR TEAM</p>
+            <!-- heading-2 -->
+            <h2 class="w-full text-center text-4xl font-['Product_Sans'] font-semibold mt-3 mb-12">
+                Meet The Team
+            </h2>
+            <!-- Profile Card-1-->
+            <div data-aos="fade-up" id="profile-card-1" class="w-[300px] h-fit border-2 rounded-xl pt-5">
+                <img src="assets/Mask (3).png" alt="team-member-image" class="mx-auto my-8">
+                <p class="text-xl font-semibold font-['montserrat'] text-center">Vanessa Laird</p>
+                <p class="text-sm font-semibold font-['montserrat'] text-gray-400 text-center my-4 tracking-widest">
+                    UI DESIGNER
+                </p>
+                <!-- social media icon container -->
+                <div class="flex border-t-2 mt-10">
+                    <div class=" flex-auto text-center py-4">
+                        <i class="fa-brands fa-twitter text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto border-l-2 border-r-2 text-center py-4">
+                        <i class="fa-brands fa-facebook text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto text-center py-4">
+                        <i class="fa-solid fa-globe text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile Card-2-->
+            <div data-aos="fade-up" data-aos-delay="200" id="profile-card-2" class="w-[300px] h-fit border-2 rounded-xl pt-5">
+                <img src="assets/Userpic (1).png" alt="team-member-image" class="mx-auto my-8">
+                <p class="text-xl font-semibold font-['montserrat'] text-center">Mason Campbell</p>
+                <p class="text-sm font-semibold font-['montserrat'] text-gray-400 text-center my-4 tracking-widest">
+                    UI DESIGNER
+                </p>
+                <!-- social media icon container -->
+                <div class="flex border-t-2 mt-10">
+                    <div class=" flex-auto text-center py-4">
+                        <i class="fa-brands fa-twitter text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto border-l-2 border-r-2 text-center py-4">
+                        <i class="fa-brands fa-facebook text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto text-center py-4">
+                        <i class="fa-solid fa-globe text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile Card-3-->
+            <div data-aos="fade-up" data-aos-delay="400" id="profile-card-3" class="w-[300px] h-fit border-2 rounded-xl pt-5">
+                <img src="assets/Userpic (2).png" alt="team-member-image" class="mx-auto my-8">
+                <p class="text-xl font-semibold font-['montserrat'] text-center">Irea Evans</p>
+                <p class="text-sm font-semibold font-['montserrat'] text-gray-400 text-center my-4 tracking-widest">
+                    CLIENT MANAGER
+                </p>
+                <!-- social media icon container -->
+                <div class="flex border-t-2 mt-10">
+                    <div class="flex-auto text-center py-4">
+                        <i class="fa-brands fa-twitter text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto border-l-2 border-r-2 text-center py-4">
+                        <i class="fa-solid fa-globe text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                    <div class="flex-auto text-center py-4">
+                        <i class="fa-solid fa-globe text-[22px] text-gray-400 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full">
+        <!-- Subcribe Section -->
+        <section id="subscribe" class="w-full px-5 sm:px-10 lg:px-14 py-10 flex flex-wrap justify-between pt-20">
+            <!-- heading-1 -->
+            <p class="w-full text-center text-sm tracking-[6px] font-semibold text-gray-400">OUR TEAM</p>
+            <!-- heading-2 -->
+            <h1 class="w-full text-center text-4xl font-['Product_Sans'] font-semibold mt-3 mb-12">
+                Subscribe Our Newsletter
+            </h1>
+            <!-- Mail Image -->
+            <div class="w-full lg:w-[40%] py-10">
+                <img
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-easing="ease-in-out"
+                    src="assets/Frame.png"
+                    alt="mail-image"
+                    class="mx-auto lg:mx-0"
+                />
+            </div>
+            <!-- Email Form Section-->
+            <div class="w-full lg:w-[60%] py-10">
+                <p class="text-center lg:text-left text-lg font-semibold font-['montserrat'] mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus harum vero dolore dolorum possimus nostrum.
+                </p>
+                <form class="w-full flex flex-col justify-center items-center">
+                    <input
+                        id="subscribe-email"
+                        type="email" name="email" placeholder="Your E-mail here..." 
+                        class="w-3/4 h-14 lg:w-full lg:h-[75px] rounded-full shadow-2xl text-sm sm:text-lg lg:text-2xl font-semibold pl-7 sm:pl-16 mt-14 mb-5 border-2 border-[#ffffff]"
+                    />
+                    <br/>
+                    <input type="submit" value="Subscribe Our Newsletter" class="w-3/4 lg:w-full h-12 rounded-lg bg-[#FF6600] text-white font-medium text-sm sm:text-lg border-2 border-[#FF6600] cursor-pointer hover:text-black hover:bg-transparent"/>
+                </form>
+            </div>
+        </section>
+        <!-- About & Credit Section -->
+        <section id="about-section" class="w-full flex flex-wrap flex-col px-5 sm:px-10 lg:px-14 py-10 sm:flex-row gap-x-28 gap-y-10 justify-center items-center">
+            <img src="assets/Logo.png" alt="brand-logo" class="w-[120px]">
+            <p class="w-fit text-[#5D528E] font-semibold text-center">
+                &copy; <span id="year"></span> Epixelab. All rights reserved.
+            </p>
+            <ul class="flex flex-wrap items-center justify-center gap-5">
+                <li>
+                    <a href="#" class="text-[#5D528E] font-semibold" aria-label="portfolio-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[#5D528E] font-semibold" aria-label="how-it-works-link">How it Works</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[#5D528E] font-semibold" aria-label="pricing-link">Pricing</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[#5D528E] font-semibold" aria-label="about-page-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[#5D528E] font-semibold" aria-label="login-page-link">Login</a>
+                </li>
+            </ul>
+        </section>
+        <hr class="w-full border-[#ececec]"/>
+        <p id="footer-para" class="text-gray-400 text-center px-5 py-5">
+            Startpup Framework contains components and complex blocks which can easily be integrated into almost any design.
+        </p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();     // Animate on Scroll Plugin
+        const currentYear = new Date().getFullYear();
+        const year = document.getElementById("year");
+        year.innerHTML = currentYear
+
+        const sliderMenuContainer = document.getElementById("slider-menu-container");
+        const sliderMenuBtn = document.getElementById("slider-menu-btn");
+        const toggleThemeBtn = document.getElementById("toggle-theme-btn");
+        
+        function sliderMenu(){
+            if (sliderMenuBtn.innerHTML === '<i class="fa-solid fa-xmark"></i>') {
+                sliderMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+            } else {
+                sliderMenuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+            }
+            sliderMenuContainer.classList.toggle('-translate-y-full')
+        }
+
+        const navMenu = document.getElementById("nav-menu");
+        const heroSection = document.getElementById("hero-section");
+        const mainSection = document.getElementById("main-section");
+        const subscribeSection = document.getElementById("subscribe");
+        const aboutSection = document.getElementById("about-section");
+        const footerPara = document.getElementById("footer-para");
+        const subscribeEmail = document.getElementById("subscribe-email");
+        const videoPlayerImage = document.getElementById("video-player-image");
+        const heroImage = document.getElementById("hero-image");
+        const gdCard = document.getElementById("gd-card");
+        const veCard = document.getElementById("ve-card");
+        const dmCard = document.getElementById("dm-card");
+        const profileCard1 = document.getElementById("profile-card-1");
+        const profileCard2 = document.getElementById("profile-card-2");
+        const profileCard3 = document.getElementById("profile-card-3");
+
+        toggleThemeBtn.addEventListener('click', ()=>{
+            if (toggleThemeBtn.innerHTML === '<i class="fa-solid fa-toggle-on"></i>') {
+                toggleThemeBtn.innerHTML = '<i class="fa-solid fa-toggle-off"></i>'
+            } else {
+                toggleThemeBtn.innerHTML = '<i class="fa-solid fa-toggle-on"></i>'
+            }
+            navMenu.classList.toggle("dark:bg-slate-700");
+            heroSection.classList.toggle("dark:bg-slate-500");
+            mainSection.classList.toggle("dark:bg-slate-500");
+            subscribeSection.classList.toggle("dark:bg-slate-500");
+            aboutSection.classList.toggle("dark:bg-slate-700");
+            footerPara.classList.toggle("dark:bg-slate-700");
+            subscribeEmail.classList.toggle("bg-transparent");
+            videoPlayerImage.classList.toggle("brightness-50");
+            heroImage.classList.toggle("brightness-50");
+            gdCard.classList.toggle("bg-slate-600");
+            veCard.classList.toggle("bg-slate-600");
+            dmCard.classList.toggle("bg-slate-600");
+            profileCard1.classList.toggle("bg-slate-600");
+            profileCard2.classList.toggle("bg-slate-600");
+            profileCard3.classList.toggle("bg-slate-600");
+        })
+    </script>
+</body>
+</html>
